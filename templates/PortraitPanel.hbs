@@ -1,0 +1,22 @@
+<div class="portrait-hud">
+		<div class="death-saves">
+			<div class="death-save-btn"><i class="{{deathIcon}}"></i></div>
+		</div>
+		<div class="portrait-hud-image" style="background-image: url('{{image}}');"></div>
+		<div class="portrait-stat-block player-details{{#if playerDetailsBottom}} player-details-bottom{{/if}}">
+			<span class="player-name">{{name}}</span>
+				<span class="player-detail">
+					{{description}}
+				</span>
+				<div class="effects-container">
+				</div>
+		</div>
+		<div class="player-buttons">
+
+
+		</div>
+		<div class="portrait-actor-configuration">
+			<i id="argon-actor-config" class="fa-solid fa-gear"></i>
+		</div>
+		{{> CritCorruptionBar}}
+	</div>

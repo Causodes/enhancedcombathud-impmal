@@ -1,0 +1,286 @@
+{
+  "ECHIM": {
+    "Panel": {
+      "Offensive":   "Offensive",
+      "Defensive":   "Defensive",
+      "Movement":    "Movement",
+      "Utility":     "Utility",
+      "FreeAction":  "Free Action",
+      "Manifest":    "Manifest",
+      "Reaction":    "Reaction",
+      "Pass":        "Pass"
+    },
+
+    "ManifestSlot": {
+      "Empty":       "Empty Power Slot",
+      "Clear":       "Clear Slot",
+      "PickTitle":   "Select Power",
+      "PickPrompt":  "Choose a power for this slot:",
+      "EmptyHint":   "Right-click this slot or use the 'Select Powers' button to assign a power.",
+      "SlotSelect":  "Choose Slot to Configure",
+      "SlotPrompt":  "Which slot do you want to assign a power to?",
+      "Slot1":       "Slot 1",
+      "Slot2":       "Slot 2",
+      "UnsustainHint": "Click to stop sustaining this power"
+    },
+
+    "Button": {
+      "RollInitiative": "Roll Initiative",
+      "OpenSheet":      "Open Sheet",
+      "Minimize":       "Minimize",
+
+      "Charge":         "Charge",
+      "Grapple":        "Grapple",
+      "Shove":          "Shove",
+      "TargetLocation": "Target Location",
+
+      "DefendAlly":     "Defend Ally",
+      "DefendZone":     "Defend Zone",
+      "Disengage":      "Disengage",
+      "TakeCover":      "Take Cover",
+      "Dodge":          "Dodge",
+
+      "Flee":           "Flee",
+      "Retreat":        "Retreat",
+      "Run":            "Run",
+
+      "Overwatch":      "Overwatch",
+      "SeizeInitiative":"Seize Initiative",
+      "Search":         "Search",
+      "Hide":           "Hide",
+      "Improvise":      "Improvise",
+      "UseObject":      "Use Object",
+      "Aim":            "Aim",
+      "Reload":         "Reload",
+      "Heal":           "Heal",
+      "Help":           "Help",
+
+      "DodgeRanged":    "Dodge Ranged",
+      "DenyTheWitch":   "Deny the Witch",
+      "EndTurn":        "End Turn",
+
+      "TacticalMovement": "Tactical Movement",
+      "FreeMovement":   "Free Movement",
+      "Prone":          "Prone",
+      "StandUp":        "Sure-Footed",
+      "StandUpAction":  "Stand Up",
+      "HitAndRun":      "Hit & Run",
+      "Disengage":      "Disengage",
+
+      "Purge":          "Purge",
+      "SelectPowers":   "Select Powers"
+    },
+
+    "Tooltip": {
+      "Charge":         "Sprint into melee with full speed behind the strike.<br><br>Move up to your full speed, then make a melee attack with <b>Advantage</b>.<br><br>Until your next turn, suffer <b>Disadvantage</b> on tests to defend against melee attacks.",
+      "Grapple":        "Make opposed test to restrain opponent.<br><br><b>Athletics (Might) or Melee (Brawling)</b> vs target's Athletics (Might), Melee (Brawling), or Reflexes (Dodge).<br><br>Success: Target is Restrained. Target can use an Action to escape with a repeated Opposed Test.<br><br><b>Size:</b> One size larger = Advantage. Two+ sizes larger = Advantage vs Disadvantage.",
+      "Shove":          "Use brute force to push an opponent out of position.<br><br><b>Opposed Athletics (Might)</b> vs target's Athletics (Might) or Reflexes (Dodge).<br><br>Success: Move the target one step in any direction.",
+      "TargetLocation": "Fire at a specific body part, bypassing some defences.<br><br>Imposes <b>Disadvantage</b> on the attack.<br><br>Negates cover when targeting <b>exposed arms or head</b>.",
+
+      "DefendAlly":     "Intercept attacks aimed at a nearby ally.<br><br>Until your next turn, attacks targeting a chosen ally in <b>Immediate Range</b> are redirected to you. You oppose melee attacks and take the Damage; ranged attacks hit you automatically.<br><br>Multiple defenders may each choose who they protect.",
+      "DefendZone":     "Hold a chokepoint against intruders.<br><br>Block entry through one adjacent zone boundary. Intruders must make <b>Athletics (Might)</b> vs your Athletics (Might).<br><br><b>Advantage:</b> Wielding a shield, or an ally is also Defending.<br><br><b>Success:</b> Barred. <b>Failure:</b> Pushed past.",
+      "Disengage":      "Break away from melee without triggering reactions from engaged opponents.",
+      "TakeCover":      "Seek protection from incoming fire.<br><br><b>Light Cover:</b> +2 Armour vs ranged attacks.<br><br><b>Medium Cover:</b> +4 Armour vs ranged attacks.<br><br><b>Full Cover:</b> +6 Armour vs ranged attacks.",
+      "Dodge":          "Adopt a defensive stance against incoming attacks.<br><br>Gain <b>Advantage</b> on Dodge tests against melee attacks.<br><br>No reaction needed to dodge <b>ranged attacks</b> until your next turn.",
+
+      "Flee":           "Abandon the battle and escape alone.<br><br>Expend your action and all movement to leave the encounter.<br><br><b>Cost:</b> Reduces group Superiority by 1.",
+      "Retreat":        "Call a coordinated tactical withdrawal.<br><br>The group falls back together.<br><br><b>Cost:</b> Remaining players lose Superiority if the group is divided.",
+      "Run":            "Move at speed beyond your normal pace.<br><br><b>Zones:</b> Move to any adjacent zone.<br><br><b>Gridded:</b> Add 12 metres of movement this turn.",
+
+      "FreeMovement":   "Tap into a burst of extra movement without spending your Move Action.<br><br><b>Distance:</b> 2 metres (4 metres while Running).<br><br><b>Once per turn.</b> Free Movement can be used after the Move Action has been expended.",
+      "TacticalMovementFree": "<b>Tactical Movement</b> — Take Cover as a Free Action once per turn.",
+      "TakeCoverFree":  "<b>Tactical Movement</b> — Take Cover as a Free Action once per turn.",
+      "DodgeFree":      "<b>Forewarning</b> — Take the Dodge Action as a Free Action on your turn.",
+      "Prone":          "Drop to the ground, gaining the Prone condition.<br><br>A Prone creature can only move by crawling, reducing your speed by one step (minimum Slow).<br><br>You gain <b>Disadvantage</b> on all Melee Tests.<br><br><b>Creatures within Immediate Range:</b> Have Advantage on Attack Tests against you.<br><br><b>Creatures outside Immediate Range:</b> Have Disadvantage on Attack Tests against you.",
+      "StandUp":        "<b>Sure-Footed</b> — Stand up from Prone as a Free Action once per turn.<br><br>Cannot be used while Restrained or being involuntarily moved.",
+      "StandUpAction":  "Stand up from Prone, expending all remaining movement.<br><br><b>Requires:</b> No movement used this turn (Can have used Free Movement).",
+      "HitAndRun":      "<b>Hit And Run</b> — After striking an enemy, make a Reflexes (Acrobatics) test to Disengage and move to an adjacent Zone (8m).",
+      "DisengageFree":  "<b>Slippery ×2</b> — Disengage from engagement as a Free Action.",
+
+      "Overwatch":      "Nominate a trigger and prepare a response for when it occurs.<br><br>Declare an observable event and the action to take.<br><br><b>If triggered:</b> Act immediately when the trigger occurs.<br><br><b>If not triggered:</b> Act again at end of initiative.",
+      "SeizeInitiative":"Force your way to the top of the initiative order.<br><br>Act first at the start of the next round.<br><br><b>Duration:</b> Until initiative changes, or another creature also seizes it.",
+      "Search":         "Actively look for something hidden or not immediately obvious.<br><br>Make a <b>Sight</b>, <b>Intuition</b>, or appropriate test based on what is being sought.",
+      "Hide":           "Conceal yourself from enemies using available cover.<br><br>Roll <b>Stealth</b> and record the SL. Requires terrain that provides cover.<br><br><b>While Hidden:</b> Speed is Slow. Attacks from hiding are always <b>Critical Hits</b>.",
+      "Improvise":      "Take an action not covered by the standard list.",
+      "UseObject":      "Interact with an item or environmental feature that requires significant time or effort.",
+      "Aim":            "Line up a careful shot before attacking.<br><br>Your next ranged attack gains <b>one additional range step</b> and may target a <b>specific hit location</b> without penalty.<br><br>Cannot aim <b>burst or full-auto</b> fire.",
+      "Reload":         "Reload your ranged weapon, preparing it to fire again.",
+      "Heal":           "Tend to a wounded ally's injuries with field medicine.<br><br><b>Medicae</b> test: Routine (+20) out of combat, Challenging (+0) in combat.<br><br><b>Success:</b> Target heals Wounds equal to SL + your Intelligence Bonus.<br><br><b>Limit:</b> Once per day per ally, reset after each Critical Wound.",
+      "Help":           "Support an ally so they can act more effectively.<br><br>Target ally gains <b>Advantage</b> on their next test.",
+
+      "DodgeRanged":    "React to an incoming ranged attack.<br><br><b>Opposed Reflexes (Dodge)</b> vs the attacker's Ballistic Skill to avoid being hit.",
+      "DenyTheWitch":   "Counteract an enemy psychic power as it manifests.<br><br><b>Opposed Discipline</b> vs the caster's Discipline. On success, the power fails.",
+      "EndTurn":        "End your turn and pass initiative to the next combatant.",
+
+      "TwoHandedSlot":  "Two-handed: Off-hand occupied",
+
+      "WarpCharge":     "Warp Charges (current / threshold). Accumulates with each power use.",
+      "Purge":          "Discipline (Psychic) test to purge Warp Charges. Success reduces charges by WPB + SL; failure still reduces but triggers Psychic Phenomena.",
+      "SustainedPowers":"Currently sustained psychic powers. Maintaining these reserves a minimum Warp Charge each round.",
+      "SelectPowers":   "Assign psychic powers to your manifest slots."
+    },
+
+    "Chat": {
+      "DefendAlly":     "{name} takes the <b>Defend Ally</b> action.",
+      "DefendZone":     "{name} takes the <b>Defend Zone</b> action.",
+      "Disengage":      "{name} <b>Disengages</b>.",
+      "TakeCover":      "{name} takes <b>{cover}</b> ({armour} vs ranged attacks).",
+      "Flee":           "{name} <b>Flees</b> the battle.",
+      "Retreat":        "{name} calls a <b>Retreat</b>.",
+      "Run":            "{name} <b>Runs</b>.",
+      "Overwatch":      "{name} declares <b>Overwatch</b>.",
+      "SeizeInitiative":"{name} <b>Seizes the Initiative</b>.",
+      "Improvise":      "{name} <b>Improvises</b>.",
+      "UseObject":      "{name} <b>Uses an Object or Feature</b>.",
+      "Aims":           "{name} <b>Aims</b>.",
+      "Helps":          "{name} <b>Helps</b> an ally.",
+      "Dodge":          "{name} <b>Dodges</b>.",
+      "Prone":          "{name} <b>goes Prone</b>.",
+      "StandUp":        "{name} <b>stands up</b> from Prone.",
+      "Disengage":      "{name} <b>Disengages</b> as a Free Action (Slippery ×2)."
+
+    },
+
+    "Cover": {
+      "LightLabel":  "Light Cover",
+      "MediumLabel": "Medium Cover",
+      "HeavyLabel":  "Full Cover",
+      "LightArmour": "+2 Armour",
+      "MediumArmour":"+4 Armour",
+      "HeavyArmour": "+6 Armour",
+      "LightChoice": "Light Cover (+2 Armour)",
+      "MediumChoice":"Medium Cover (+4 Armour)",
+      "HeavyChoice": "Full Cover (+6 Armour)"
+    },
+
+    "Dialog": {
+      "GrappleTitle":       "Grapple",
+      "GrapplePrompt":      "Choose skill:",
+      "GrappleAthletics":   "Athletics (Might)",
+      "GrappleMelee":       "Melee (Brawling)",
+      "TakeCoverTitle":     "Take Cover",
+      "TakeCoverPrompt":    "Select cover level:",
+      "TargetLocTitle":     "Target Location",
+      "TargetLocPrompt":    "Select weapon:",
+      "SearchTitle":        "Search",
+      "SearchPrompt":       "Select sense or skill:",
+      "SearchSight":        "Awareness (Sight)",
+      "SearchHearing":      "Awareness (Hearing)",
+      "SearchSmell":        "Awareness (Smell)",
+      "SearchSurroundings": "Awareness (Surroundings)",
+      "SearchIntuit":       "Intuition (Sense Danger)",
+      "SearchTrack":        "Athletics (Track)",
+      "ReloadTitle":        "Reload",
+      "ReloadPrompt":       "Select weapon to reload:",
+      "HealTitle":          "Heal",
+      "HealPrompt":         "Situation:",
+      "HealRoutine":        "Out of Combat: Routine (+20)",
+      "HealChallenging":    "In Combat: Challenging (+0)"
+    },
+
+    "Notification": {
+      "NoWeaponsEquipped":   "No weapons equipped.",
+      "NoReloadableWeapons": "No reloadable weapons equipped.",
+      "Reloaded":            "{weapon} reloaded."
+    },
+
+    "ThrowToggle": {
+      "SwitchToThrown":  "Switch to Thrown mode",
+      "SwitchToMelee":   "Switch to Melee mode",
+      "NoQuantity":      "No quantity remaining — cannot throw.",
+      "RestoreTitle":    "Restore Thrown Items",
+      "RestorePrompt":   "The following items were thrown during this combat. Restore their quantity?"
+    },
+
+    "Settings": {
+      "ThrownTrackingName": "Track Thrown Weapon Quantity",
+      "ThrownTrackingHint": "When enabled, throwing a weapon decrements its quantity and prompts to restore it at the end of combat.",
+      "SwapHandDisplayName": "Swap Hand Slot Display",
+      "SwapHandDisplayHint": "When enabled, the weapon set slots are displayed with the main hand on the left and off hand on the right, rather than the default (off hand left, main hand right).",
+      "RealisticRangeName": "Realistic Range",
+      "RealisticRangeHint": "Multiply range band metre values by 10 (e.g. Short = 120m instead of 12m).",
+      "HudThemeName":       "HUD Theme",
+      "HudThemeHint":       "Visual theme for the Argon Combat HUD.",
+      "ThemeArgon":         "Argon Classic",
+      "ThemeImClassic":     "Imperium Maledictum",
+      "MovementDrainName":  "Drain Movement on Action",
+      "MovementDrainHint":  "When enabled, taking any non-movement Action fully drains the actor's speed pips for that turn.",
+      "FreeMovementAutoName": "Auto-Grant Free Movement",
+      "FreeMovementAutoHint": "When enabled, Free Movement is automatically activated at the start of each actor's turn instead of requiring a manual button press. The Free Movement button will be hidden."
+    },
+
+    "Movement": {
+      "TierSlow":   "Slow",
+      "TierNormal": "Normal",
+      "TierFast":   "Fast",
+      "TierSwift":  "Swift",
+      "ToMetres":   "Click to toggle to Meters",
+      "ToZones":    "Click to toggle to Zones"
+    },
+
+    "Augmetic": {
+      "BallisticMechadendrite":  "Ballistic Mechadendrite",
+      "ManipulatorMechadendrite":"Manipulator Mechadendrite"
+    },
+
+    "Talent": {
+      "Psyker": "Psyker"
+    },
+
+    "Portrait": {
+      "Wounds":       "Wounds",
+      "DrawerTitle":  "Characteristics / Skills",
+      "CategoryChars":"Characteristics",
+      "CategorySkills":"Skills",
+      "CategorySpecs": "Specialisations",
+      "NoSpecs":       "No specialisations",
+      "FateTooltip":   "Left-click to Spend; Right-click to Restore"
+    },
+
+    "TooltipLabel": {
+      "Category":       "Category",
+      "Specialization": "Specialization",
+      "Damage":         "Damage",
+      "Range":          "Range",
+      "Traits":         "Traits",
+      "IgnoreAP":       "Ignore AP",
+      "Discipline":     "Discipline",
+      "WarpRating":     "Warp Rating",
+      "Difficulty":     "Difficulty",
+      "Target":         "Target",
+      "Duration":       "Duration",
+      "Overt":          "Overt"
+    }
+  },
+
+  "IMPMAL": {
+    "HUD": {
+      "SkillAthletics": "Athletics",
+      "SkillAwareness": "Awareness",
+      "SkillDexterity": "Dexterity",
+      "SkillDiscipline": "Discipline",
+      "SkillFortitude": "Fortitude",
+      "SkillIntuition": "Intuition",
+      "SkillLinguistics": "Linguistics",
+      "SkillLogic": "Logic",
+      "SkillLore": "Lore",
+      "SkillMedicae": "Medicae",
+      "SkillMelee": "Melee",
+      "SkillNavigation": "Navigation",
+      "SkillPiloting": "Piloting",
+      "SkillPresence": "Presence",
+      "SkillPsychic": "Psychic",
+      "SkillRanged": "Ranged",
+      "SkillRapport": "Rapport",
+      "SkillReflexes": "Reflexes",
+      "SkillStealth": "Stealth",
+      "SkillTech": "Tech"
+    },
+
+    "WeaponTrait": {
+      "TwoHanded": "Two Handed",
+      "OneHanded": "One Handed",
+      "RapidFire":  "Rapid Fire"
+    }
+  }
+}

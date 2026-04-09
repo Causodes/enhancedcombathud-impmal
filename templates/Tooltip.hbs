@@ -1,0 +1,20 @@
+<div class="ech-tooltip im-tooltip">
+  <div class="ech-tooltip-header im-tooltip-header">
+    {{#if title}}<span class="im-tooltip-title">{{{title}}}</span>{{/if}}
+  </div>
+  <div class="ech-tooltip-body im-tooltip-body">
+    {{#if details.length}}
+    <div class="ech-tooltip-details im-tooltip-details">
+      {{#each details}}
+      <div class="im-tooltip-detail">
+        <span class="im-tooltip-detail-label">{{{localize label}}}</span>
+        <span class="im-tooltip-detail-value">{{{value}}}</span>
+      </div>
+      {{/each}}
+    </div>
+    {{/if}}
+    {{#if description}}
+    <div class="ech-tooltip-description im-tooltip-description">{{{description}}}</div>
+    {{/if}}
+  </div>
+</div>

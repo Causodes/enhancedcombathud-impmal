@@ -1,0 +1,215 @@
+/* IM theme overrides */
+
+/* Font */
+body.ech-impmal-theme-classic .extended-combat-hud {
+    --ech-font-family: "Novarese", serif;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .action-element-title,
+body.ech-impmal-theme-classic .extended-combat-hud .feature-element-title {
+    font-family: "Novarese", serif !important;
+    color: var(--ech-impmal-label-color) !important;
+    text-shadow: 0 0 8px rgba(6,92,99,0.9), 0 1px 2px rgba(0,0,0,0.9) !important;
+    letter-spacing: 0.04em;
+}
+
+/* Action panels */
+body.ech-impmal-theme-classic .extended-combat-hud .actions-container {
+    background-color: transparent !important;
+    border-color: var(--im-teal) !important;
+    background-image: none !important;
+}
+
+/* Portrait */
+body.ech-impmal-theme-classic .extended-combat-hud .portrait-hud {
+    border-color: var(--im-teal) !important;
+    background-color: rgba(6, 20, 25, 0.90) !important;
+    background-image:
+        url("systems/impmal/assets/ui/box-background.webp") !important;
+    background-size: cover !important;
+    background-blend-mode: multiply !important;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .portrait-hud .portrait-stat-block:not(.player-details) {
+    border-color: var(--im-teal) !important;
+    font-family: "Novarese", serif !important;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .portrait-hud .player-button {
+    color: var(--im-green) !important;
+    font-family: "Novarese", serif !important;
+    border: 1px solid var(--im-green-dim) !important;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .portrait-hud .player-button::before {
+    background-color: rgba(6, 50, 40, 0.50) !important;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .portrait-hud .player-button:hover {
+    color: rgba(255, 255, 255, 1.0) !important;
+    border-color: var(--im-green) !important;
+}
+
+/* Drawer */
+body.ech-impmal-theme-classic .extended-combat-hud .ability-menu {
+    font-family: "Novarese", serif !important;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .ability-menu:before {
+    background-color: rgba(6, 20, 25, 0.96) !important;
+    border-color: var(--im-teal) !important;
+    background-image:
+        linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.18) 50%),
+        url("systems/impmal/assets/ui/box-background.webp") !important;
+    background-size: 100% 4px, cover !important;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .ability-menu ul > li {
+    border-color: var(--im-teal) !important;
+    color: var(--im-green) !important;
+    font-family: "Novarese", serif !important;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .ability-menu ul > li.ability-title {
+    color: var(--im-green) !important;
+    font-family: "Novarese", serif !important;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .ability-toggle .ability.ability-title {
+    font-family: "Novarese", serif !important;
+    color: var(--im-green) !important;
+    background-color: rgba(6, 50, 40, 0.85) !important;
+    border: 1px solid var(--im-teal) !important;
+    box-shadow: inset 0 1px 0 rgba(66, 207, 125, 0.15) !important;
+}
+
+/* Movement HUD */
+body.ech-impmal-theme-classic .extended-combat-hud .movement-hud {
+    background-color: rgba(6, 20, 25, 0.60) !important;
+    border-color: var(--im-teal) !important;
+    background-image:
+        linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.18) 50%),
+        url("systems/impmal/assets/ui/box-background.webp") !important;
+    background-size: 100% 4px, cover !important;
+    --ech-movement-baseMovement-background: var(--im-green);
+    --ech-movement-baseMovement-boxShadow: var(--im-green-glow);
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .movement-fraction-row,
+body.ech-impmal-theme-classic .extended-combat-hud .movement-mode-toggle {
+    color: var(--im-green) !important;
+    font-family: "Novarese", serif !important;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .movement-tier-select {
+    color: var(--im-green) !important;
+    border-color: var(--im-teal) !important;
+    background-color: rgba(6, 20, 25, 0.88) !important;
+    font-family: "Novarese", serif !important;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .movement-tier-select .movement-tier-options {
+    background: rgba(6, 20, 25, 0.97) !important;
+    border-color: var(--im-teal) !important;
+    font-family: "Novarese", serif !important;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .movement-tier-select .movement-tier-options li:hover {
+    background: rgba(6, 50, 40, 0.6) !important;
+}
+
+/* Tooltips */
+body.ech-impmal-theme-classic .im-tooltip-title {
+    color: rgba(255, 255, 255, 1.0) !important;
+    font-family: "Novarese", serif !important;
+}
+
+body.ech-impmal-theme-classic .ech-tooltip.im-tooltip .ech-tooltip-header {
+    background-color: var(--im-teal) !important;
+    border-bottom: 1px solid var(--im-green) !important;
+}
+
+body.ech-impmal-theme-classic .ech-tooltip.im-tooltip .ech-tooltip-body {
+    background-color: rgba(6, 25, 18, 0.96) !important;
+    color: rgba(200, 200, 200, 1.0) !important;
+}
+
+body.ech-impmal-theme-classic .ech-tooltip.im-tooltip .ech-tooltip-details > div > span:first-child {
+    color: var(--im-green) !important;
+}
+
+body.ech-impmal-theme-classic .ech-tooltip.im-tooltip .ech-tooltip-details > div > span:last-child {
+    color: rgba(204, 221, 238, 1.0) !important;
+}
+
+body.ech-impmal-theme-classic .im-trait-badge {
+    color: var(--im-green) !important;
+    background: rgba(6, 92, 99, 0.3) !important;
+    border-color: rgba(66, 207, 125, 0.4) !important;
+}
+
+body.ech-impmal-theme-classic .im-trait-label {
+    color: var(--im-green) !important;
+}
+
+/* Weapon sets */
+body.ech-impmal-theme-classic .extended-combat-hud .weapon-sets .weapon-set {
+    background-color: rgba(6, 20, 25, 0.60) !important;
+    border-color: var(--im-teal) !important;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .weapon-sets .weapon-set > .set {
+    background-color: rgba(6, 20, 25, 0.60) !important;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .weapon-sets .weapon-set.active:after {
+    background-color: var(--im-green) !important;
+}
+
+/* Crit/Corruption bar */
+body.ech-impmal-theme-classic .extended-combat-hud .portrait-hud .im-crit-corruption-bar-portrait {
+    background: rgba(6, 20, 25, 0.50) !important;
+    border-color: var(--im-green) !important;
+    font-family: "Novarese", serif !important;
+    color: var(--im-green) !important;
+}
+
+/* Sustained power chips */
+body.ech-impmal-theme-classic .extended-combat-hud .im-sustain-chip {
+    color: rgba(135, 230, 175, 0.95) !important;
+    background: rgba(20, 60, 35, 0.80) !important;
+    border-color: rgba(50, 160, 100, 0.55) !important;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .im-sustain-chip:hover {
+    background: rgba(130, 30, 20, 0.85) !important;
+    border-color: rgba(200, 70, 55, 0.75) !important;
+    color: rgba(255, 165, 145, 0.95) !important;
+}
+
+/* Warp charge pips */
+body.ech-impmal-theme-classic .extended-combat-hud .im-warp-pip {
+    border-color: rgba(6, 92, 99, 0.55) !important;
+}
+
+/* Tier colours mirroring movement pip palette */
+body.ech-impmal-theme-classic .extended-combat-hud .im-warp-pip.filled.warp-safe {
+    background: linear-gradient(180deg, rgba(60, 200, 130, 0.9), rgba(40, 165, 100, 1.0)) !important;
+    border-color: rgba(60, 200, 130, 0.7) !important;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .im-warp-pip.filled.warp-warn {
+    background: linear-gradient(180deg, rgba(210, 175, 35, 0.95), rgba(175, 140, 20, 1.0)) !important;
+    border-color: rgba(210, 180, 45, 0.75) !important;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .im-warp-pip.filled.warp-danger {
+    background: linear-gradient(180deg, rgba(220, 100, 30, 0.95), rgba(185, 60, 15, 1.0)) !important;
+    border-color: rgba(220, 100, 30, 0.75) !important;
+}
+
+body.ech-impmal-theme-classic .extended-combat-hud .im-warp-pip.filled.warp-critical {
+    background: linear-gradient(180deg, rgba(210, 30, 30, 0.97), rgba(170, 10, 10, 1.0)) !important;
+    border-color: rgba(225, 50, 50, 0.85) !important;
+}
+

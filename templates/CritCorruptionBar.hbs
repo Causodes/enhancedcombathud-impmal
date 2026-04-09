@@ -1,0 +1,18 @@
+<div class="im-crit-corruption-bar-portrait">
+    {{#if showCriticals}}
+    <span class="im-stat">
+        <span class="im-stat-label">Criticals</span>
+        <span class="im-stat-value" style="color: {{criticalColor}}">{{criticalValue}}</span>
+        <span class="im-stat-sep">/</span>
+        <span class="im-stat-max" style="color: #fff; font-size: 1.25rem">{{criticalMax}}</span>
+    </span>
+    {{/if}}
+    {{#if showCorruption}}
+    <span class="im-stat">
+        <span class="im-stat-label">Corruption</span>
+        <span class="im-stat-value" style="color: {{corruptionColor}}">{{corruptionValue}}</span>
+        <span class="im-stat-sep">/</span>
+        <span class="im-stat-max" style="color: #fff; font-size: 1.25rem">{{corruptionMax}}</span>
+    </span>
+    {{/if}}
+</div>

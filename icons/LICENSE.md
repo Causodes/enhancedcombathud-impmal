@@ -1,0 +1,36 @@
+All icons in this directory are from [Game-icons.net](https://game-icons.net), used under the [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) license
+
+The following icons are included
+- By [Lorc](https://lorcblog.blogspot.com/)
+	-psychic-wave.svg
+	-sands-of-time.svg
+	-meditation.svg
+	-firework-rocket.svg
+	-tinker.svg
+	-grab.svg
+	-palm.svg
+	-drama-masks.svg
+	-ninja-mask.svg
+	-snatch.svg
+	-tripwire.svg
+	-run.svg
+	-tear-tracks.svg
+- By [Delapouite](https://delapouite.com/)
+	-walk.svg
+	-armor-upgrade.svg
+	-checklist.svg
+	-thumb-up.svg
+	-first-aid-kit.svg
+	-tightrope.svg
+	-crowbar.svg
+	-jump-across.svg
+	-lockpicks.svg
+	-fencer.svg
+	-magic-hat.svg
+	-square.svg
+- By [Skoll](https://game-icons.net/)
+	-breaking-chain.svg
+	-drop-weapon.svg
+	-open-palm.svg
+- By [ DarkZaitzev](https://www.deviantart.com/darkzaitzev)
+	- big-gear.svg
