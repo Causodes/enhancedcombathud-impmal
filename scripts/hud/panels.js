@@ -63,10 +63,12 @@ export function makePanels(ARGON, IMWeaponButton, IMActionButton, IMTargetAction
                     new IMWeaponButton({ item: mainHand ?? null, isWeaponSet: true, isPrimary: false }),
                 ];
             } else {
-                // NPCs have no hand slots — show all equipped weapons
+                // NPCs have no hand slots — show all equipped weapons and attack traits
                 const equipped = actor.items.filter(i => i.type === "weapon" && i.system.equipped?.value);
-                weaponButtons = equipped.length
-                    ? equipped.map(w => new IMWeaponButton({ item: w, isWeaponSet: false, isPrimary: false }))
+                const attackTraits = actor.items.filter(i => i.type === "trait" && i.system.attack?.enabled);
+                const attackItems = [...equipped, ...attackTraits];
+                weaponButtons = attackItems.length
+                    ? attackItems.map(w => new IMWeaponButton({ item: w, isWeaponSet: false, isPrimary: false }))
                     : [new IMWeaponButton({ item: null, isWeaponSet: false, isPrimary: false })];
             }
 

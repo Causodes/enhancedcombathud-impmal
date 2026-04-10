@@ -87,7 +87,10 @@ export function makeWeaponButton(ARGON) {
         get label()      { return this.item?.name ?? ""; }
         get icon()       { return this.item?.img ?? PLACEHOLDER_ICON; }
         get hasTooltip() { return Boolean(this.item); }
-        get isActive()   { return this.item?.system.equipped?.value === true; }
+        get isActive()   {
+            if (this.item?.type === "trait") return this.item.system.attack?.enabled === true;
+            return this.item?.system.equipped?.value === true;
+        }
         get targets() {
             if (!this.item) return 0;
             const tr = this.item.system.traits;
@@ -272,6 +275,7 @@ export function makeWeaponButton(ARGON) {
                 return;
             }
 
+            if (this.item.type === "trait") return this.item.actor.setupTraitTest(this.item.id);
             return this.item.actor.setupWeaponTest(this.item.id);
         }
         async _onRightClick() { this.item?.sheet.render(true); }
