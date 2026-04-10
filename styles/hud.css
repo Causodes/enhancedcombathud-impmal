@@ -556,3 +556,8 @@ body.ech-impmal-theme-classic .extended-combat-hud
     color: var(--im-green);
     text-shadow: 0 0 6px var(--im-green-glow);
 }
+
+/* -- Pointer cursor on all action buttons ---------------------------------- */
+.extended-combat-hud .action-element {
+    cursor: pointer;
+}
