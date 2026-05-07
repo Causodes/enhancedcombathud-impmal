@@ -142,6 +142,7 @@ async function decrementSpeed(actor) {
 }
 
 function buildUnequipUpdate(actor) {
+    if (!actor.system.hands) return {};
     const update = {};
     for (const hand of ["left","right"]) {
         const doc = actor.system.hands[hand].document;

@@ -25,7 +25,7 @@ body.ech-impmal-theme-classic .extended-combat-hud .portrait-hud {
     border-color: var(--im-teal) !important;
     background-color: rgba(6, 20, 25, 0.90) !important;
     background-image:
-        url("systems/impmal/assets/ui/box-background.webp") !important;
+        url("/systems/impmal/assets/ui/box-background.webp") !important;
     background-size: cover !important;
     background-blend-mode: multiply !important;
 }
@@ -60,7 +60,7 @@ body.ech-impmal-theme-classic .extended-combat-hud .ability-menu:before {
     border-color: var(--im-teal) !important;
     background-image:
         linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.18) 50%),
-        url("systems/impmal/assets/ui/box-background.webp") !important;
+        url("/systems/impmal/assets/ui/box-background.webp") !important;
     background-size: 100% 4px, cover !important;
 }
 
@@ -89,7 +89,7 @@ body.ech-impmal-theme-classic .extended-combat-hud .movement-hud {
     border-color: var(--im-teal) !important;
     background-image:
         linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.18) 50%),
-        url("systems/impmal/assets/ui/box-background.webp") !important;
+        url("/systems/impmal/assets/ui/box-background.webp") !important;
     background-size: 100% 4px, cover !important;
     --ech-movement-baseMovement-background: var(--im-green);
     --ech-movement-baseMovement-boxShadow: var(--im-green-glow);

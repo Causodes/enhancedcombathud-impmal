@@ -69,7 +69,8 @@ export function makePortraitPanel(ARGON) {
             const { wounds } = this.actor.system.combat;
             return wounds.max > 0 && wounds.value >= wounds.max;
         }
-        get isDying() { return this.actor.system.combat.criticals.value > 0; }
+        // Impmal has no "dying" state separate from dead; criticals are not death saves.
+        get isDying() { return false; }
 
         async getData() {
             const data = await super.getData();
@@ -278,6 +279,9 @@ export function makePortraitPanel(ARGON) {
             this._buildProtectionColumn();
             this._buildFateColumn();
         }
+
+        // Impmal has no death-save mechanic; suppress the Argon "not implemented" warning.
+        async _onDeathSave() {}
 
         async _getButtons() {
             return [

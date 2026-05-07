@@ -98,13 +98,15 @@ export function makeWeaponSets(ARGON) {
                 const mainHandItem = activeSet?.secondary ?? null;
                 const unequip = buildUnequipUpdate(this.actor);
                 if (!foundry.utils.isEmpty(unequip)) await this.actor.update(unequip);
+                const hands = this.actor.system.hands;
+                if (!hands) return;
                 if (mainHandItem) {
-                    await this.actor.update(this.actor.system.hands.equip(mainHandItem, primaryHand));
+                    try { await this.actor.update(hands.equip(mainHandItem, primaryHand)); } catch(e) {}
                     const isTwoHanded = mainHandItem.system.traits?.has?.("twohanded");
                     if (!isTwoHanded && offHandItem && offHandItem.id !== mainHandItem.id)
-                        await this.actor.update(this.actor.system.hands.equip(offHandItem, secondaryHand));
+                        try { await this.actor.update(hands.equip(offHandItem, secondaryHand)); } catch(e) {}
                 } else if (offHandItem) {
-                    await this.actor.update(this.actor.system.hands.equip(offHandItem, secondaryHand));
+                    try { await this.actor.update(hands.equip(offHandItem, secondaryHand)); } catch(e) {}
                 }
             } finally {
                 this._changingSet = false;

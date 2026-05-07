@@ -7,10 +7,10 @@
     "name": "causodes"
     }
   ],
-  "version": "1.0.1",
+  "version": "2.0.0",
   "compatibility": {
-    "minimum": "13",
-    "verified": "13"
+    "minimum": "14",
+    "verified": "14"
   },
   "socket": false,
   "languages": [
@@ -45,7 +45,7 @@
     ]
   },
   "url": "https://github.com/Causodes/enhancedcombathud-impmal",
-  "download": "https://github.com/Causodes/enhancedcombathud-impmal/archive/refs/tags/v1.0.1.zip",
+  "download": "https://github.com/Causodes/enhancedcombathud-impmal/archive/refs/tags/v2.0.0.zip",
   "manifest": "https://github.com/Causodes/enhancedcombathud-impmal/releases/latest/download/module.json",
   "readme": "https://github.com/Causodes/enhancedcombathud-impmal/blob/main/README.md",
   "changelog": "https://github.com/Causodes/enhancedcombathud-impmal/blob/main/CHANGELOG.md",
